@@ -1,0 +1,18 @@
+# Import necessary modules and function
+import os
+import pandas as pd
+from functions import process_csv_data
+
+# List all the CSV files in the current working directory
+csv_files = [f for f in os.listdir('.') if os.path.isfile(f) and f.endswith('.csv')]
+
+# If CSV files are present, process the most recent one, otherwise print an error
+if csv_files:
+    # Sort the files by modification time in descending order
+    recent_csv_file = sorted(csv_files, key=os.path.getmtime, reverse=True)[0]
+    # Process the most recent CSV file
+    df = process_csv_data(recent_csv_file)
+    # Print the first few rows of the DataFrame to display the data
+    print(df.head())
+else:
+    print("No CSV files found in the current working directory.")

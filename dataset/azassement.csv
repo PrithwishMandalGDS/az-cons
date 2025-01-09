@@ -1,0 +1,4 @@
+TYPE,FILENAME,LOCATION
+GAP,MigrationPlan.csv,https://azassesment.blob.core.windows.net/gap/MigrationPlan.csv
+GAP,CurrentState.csv,https://azassesment.blob.core.windows.net/gap/CurrentState.csv
+QUES,CurrentState.csv,https://azassesment.blob.core.windows.net/gap/CurrentState.csv

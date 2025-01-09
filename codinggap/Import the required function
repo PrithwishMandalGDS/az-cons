@@ -1,0 +1,8 @@
+# Import the required function
+from functions import process_csv_data
+
+# Use the function to process the CSV data and store it in a DataFrame
+df = process_csv_data()
+
+# Print the first few rows of the DataFrame to display the data
+print(df.head())
